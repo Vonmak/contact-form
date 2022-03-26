@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.contact-form {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+}
+.conbutton {
+  cursor: pointer;
+}
+.conbutton:hover {
+  background-color: transparent;
+  color: #047857;
+}
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+.form-input input,
+textarea {
+  padding: 10px;
+  width: 100%;
+}
+.error-hint {
+  color: red;
+}
+/* input .invalid {
+  color: red;
+} */
+.please {
+  display: none;
+}
+.thanks {
+  display: none;
+}
+.send {
+  width: 150px;
+  height: 35px;
+}
+.send:hover {
+  background-color: transparent;
+  color: #047857;
+}
