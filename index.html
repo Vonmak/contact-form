@@ -14,6 +14,115 @@
     <title>auth</title>
   </head>
   <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center contact-form"
+    >
+      <!-- this button triggers the modal -->
+      <button
+        class="btn btn-success btn-lg conbutton"
+        data-toggle="modal"
+        data-target="#contactForm"
+      >
+        Contact Us &#8594;
+      </button>
+
+      <div class="modal fade" id="contactForm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Contact Form</h4>
+
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div class="container">
+              <form action="" method="post" class="main-form">
+                <div class="container form-input">
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    class=""
+                    id="name"
+                    placeholder="Name*"
+                  />
+                  <div class="error-hint please">Your Name is required!</div>
+                </div>
+
+                <div class="container form-input">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    class=""
+                    name="email"
+                    id="email"
+                    placeholder="Email*"
+                  />
+                  <div class="error-hint please">
+                    A valid email is required!
+                  </div>
+                </div>
+
+                <div class="container form-input">
+                  <label>Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    class=""
+                    id="phone"
+                    placeholder="Your Phone Number*"
+                  />
+                  <div class="error-hint please">Phone Number invalid!</div>
+                </div>
+
+                <div class="container form-input">
+                  <label>Location</label>
+                  <input
+                    type="text"
+                    name="location"
+                    class=""
+                    id="location"
+                    placeholder="Your Location*"
+                  />
+                  <div class="error-hint please">Location is required!</div>
+                </div>
+
+                <div class="container form-input">
+                  <label>Message</label>
+                  <textarea name="message" class="" id="message"></textarea>
+                  <div class="error-hint please">The message is required!</div>
+                </div>
+
+                <button type="submit" class="btn btn-success send">Send</button>
+              </form>
+
+              <div class="thanks">
+                <h2>Thanks for contacting Us!</h2>
+                <br />
+                <p>Your Message has been successfully received!!</p>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper-2.11.2.js"></script>
     <script src="js/bootstrap.min.js"></script>
